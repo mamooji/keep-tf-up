@@ -18,24 +18,24 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "Today",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "chevron-down" : "chevron-down-outline"}
-              color={color}
-            />
-          ),
         }}
       />
       <Tabs.Screen
         name="yesterday"
         options={{
           title: "Yesterday",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "chevron-back" : "chevron-back-outline"}
-              color={color}
-            />
-          ),
+        }}
+      />
+      <Tabs.Screen
+        name="week"
+        options={{
+          title: "Week",
+        }}
+      />
+      <Tabs.Screen
+        name="month"
+        options={{
+          title: "Month",
         }}
       />
     </Tabs>
